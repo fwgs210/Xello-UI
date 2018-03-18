@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Xello UI</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- css -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="./css/font.css">
+	  <link rel="stylesheet" type="text/css" href="./css/styles.sass">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="flex-nav header">
+    				<div class="nav-item">
+			  			<h2>High-School Diploma 2017</h2>
+			  			<aside class="credits">
+				  			<button type="button" class="btn btn-danger btn-circle" data-value="14">14</button>
+				  			<span>Credits Left!</span>
+				  		</aside>
+			  		</div>
+    				<div class="nav-item">
+						<aside class="progress_bar"><span class="bg-green progress_bar_value" style="width:50%" data-value="50" data-value-min="0" data-value-max="100"></span></aside>
+						<aside><span class="green-text">14</span> / 30</aside>
+			  		</div>
+			  	</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="filter-bar bg-grey">
+					<ul class="filter-bar-nav flex-nav">
+						<li class="nav-item">
+					      	<span class="nav-item-title">Requirements</span>
+							<div class="dropdown dropdown-white-bg show">
+								<a class="btn dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Show All
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								    <a class="dropdown-item" href="#">Demo 1</a>
+								    <a class="dropdown-item" href="#">Demo 2</a>
+								    <a class="dropdown-item" href="#">Demo 3</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<span class="nav-item-title">Credits</span>
+					      	<div class="credits-filter">
+						        <div class="form-check form-check-inline">
+								  <label class="form-check-label">
+								    <input class="form-check-input" type="checkbox" value="">
+								    All
+								  </label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <label class="form-check-label">
+								    <input class="form-check-input" type="checkbox" value="">
+								    Earned
+								  </label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <label class="form-check-label">
+								    <input class="form-check-input" type="checkbox" value="">
+								    Planned
+								  </label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <label class="form-check-label">
+								    <input class="form-check-input" type="checkbox" value="">
+								    Remaining
+								  </label>
+								</div>
+							</div>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</section>
+		<main>
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg" data-year="9">
+						<div class="panel active" data-panel="0" data-sortable="true">
+							<div class="panel-header">
+								<h5 class="no-bottom-margin">YEAR 9 (next year)</h5>
+								<span>1 credit planned</span>
+							</div>
+							<div class="panel-body subjects">
+								<div class="available-slot subject-added active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">English</div>
+											<div class="subject-description">
+												<span>ENG1PI</span>
+												<span class="light-grey-text">English 9</span>
+												<span class="light-grey-text float-right">1 cr.</span>
+											</div>
+										</div>
+									</summary>
+								</div>
+								<div class="available-slot subject-added has-pre active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">Function</div>
+											<div class="subject-description">
+												<span>MAT1U1</span>
+												<span class="light-grey-text">Math 9</span>
+												<button type="button" class="btn btn-circle pre-warning" data-value="14">!</button>
+												<span class="light-grey-text float-right">1 cr.</span>
+											</div>
+										</div>
+									</summary>
+									<div class="pre-tooltip">
+										<aside class="bar">
+										</aside>
+										<summary class="message">
+											<p>This course requires a Pre-Requisite</p>
+											<a href="#" class="add-pre">Add one.</a>
+										</summary>
+									</div>
+								</div>
+								<div class="available-slot active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">Add Science 9</div>
+											<div class="subject-description">
+												<span class="light-grey-text">1 cr.</span></div>
+										</div>
+									</summary>
+								</div>
+								<div class="available-slot active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">Add Geography</div>
+											<div class="subject-description">
+												<span class="light-grey-text">1 cr.</span></div>
+										</div>
+									</summary>
+								</div>
+								<div class="available-slot active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">Add French</div>
+											<div class="subject-description">
+												<span class="light-grey-text">1 cr.</span></div>
+										</div>
+									</summary>
+								</div>
+								<div class="available-slot active">
+									<aside class="add-subject">
+										<i>+</i>
+									</aside>
+									<summary class="subject">
+										<div class="subject-detail">
+											<div class="subject-name">Add Elective</div>
+											<div class="subject-description">
+												<span class="light-grey-text">16 credits remaining</span></div>
+										</div>
+									</summary>
+								</div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+							</div>
+							<div class="panel-footer">
+								<button type="button" data-panel-submit="0" class="btn btn-blue">
+									<span class="double-outline-inside"></span>
+									Ready To Submit
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg" data-year="10">
+						<div class="panel" data-panel="1" data-sortable="false">
+							<div class="panel-header">
+								<h5 class="no-bottom-margin">YEAR 10</h5>
+								<span>0 credits earned</span>
+							</div>
+							<div class="panel-body subjects">
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+							</div>
+							<div class="panel-footer">
+								<button type="button" data-panel-submit="1" class="btn btn-blue">
+									<span class="double-outline-inside"></span>
+									Ready To Submit
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg" data-year="11">
+						<div class="panel" data-panel="2" data-sortable="false">
+							<div class="panel-header">
+								<h5 class="no-bottom-margin">YEAR 11</h5>
+								<span>0 credits earned</span>
+							</div>
+							<div class="panel-body subjects">
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+							</div>
+							<div class="panel-footer">
+								<button type="button" data-panel-submit="2" class="btn btn-blue">
+									<span class="double-outline-inside"></span>
+									Ready To Submit
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg" data-year="12">
+						<div class="panel" data-panel="3" data-sortable="false">
+							<div class="panel-header">
+								<h5 class="no-bottom-margin">YEAR 12</h5>
+								<span>0 credits earned</span>
+							</div>
+							<div class="panel-body subjects">
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+								<div class="available-slot"></div>
+							</div>
+							<div class="panel-footer">
+								<button type="button" data-panel-submit="3" class="btn btn-blue">
+									<span class="double-outline-inside"></span>
+									Ready To Submit
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<!-- js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="./js/custom.js"></script>
+</html>

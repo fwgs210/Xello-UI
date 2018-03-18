@@ -1,0 +1,329 @@
+body
+  background-color: #fafafa
+  font-family: proxima-nova, sans-serif
+  color: #737373
+  font-size: 87.5%
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
+  color: #484848
+
+.header
+  justify-content: space-between
+  margin: 30px 0 15px
+  h2
+    margin-bottom: 0
+    margin-right: 20px
+    font-size: 1.5rem
+  .credits
+    margin: 10px 0
+
+.no-bottom-margin
+  margin-bottom: 0
+
+.btn-circle
+  width: 26px
+  height: 26px
+  padding: 0
+  border-radius: 13px
+  text-align: center
+  font-size: 12px
+  line-height: 1.42857
+
+.bg-green
+  background-color: #84c131
+
+.bg-grey
+  background-color: #f1f1f1
+
+.flex-nav
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  .nav-item
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  .dropdown, .credits-filter, .progress
+    display: inline-flex
+
+.filter-bar
+  border: 1px solid #ddd
+  border-radius: 8px
+
+.filter-bar-nav
+  list-style: none
+  padding-left: 0
+  margin-bottom: 0
+  padding: 0 10px
+  box-sizing: border-box
+  .nav-item
+    margin: 5px 0
+    padding: 0px 20px
+    border-right: 1px solid #ddd
+    &:after
+      content: ''
+    &:last-child
+      border-right: none
+
+.dropdown-white-bg
+  .btn
+    border-radius: 8px
+    background-color: #fff
+    border-color: #ddd
+    color: #737373
+    text-align: left
+    position: relative
+    &:after
+      position: absolute
+      right: .75rem
+      top: 50%
+      transform: translateY(-50%)
+  .dropdown-menu
+    min-width: 300px
+
+.filter-bar-nav .dropdown-white-bg .btn
+  min-width: 300px
+
+.nav-item .nav-item-title
+  margin-right: 15px
+
+.panel
+  margin: 25px 5px
+  border-radius: 8px
+  border: 1px solid transparent
+
+.panel-header, .panel-body, .panel-footer
+  padding: 10px
+
+.panel-header
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  h5
+    font-size: 1.1rem
+
+.panel-footer
+  display: none
+  background-color: #31afdc
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+  text-align: center
+  padding-top: 20px
+  padding-bottom: 20px
+
+.panel.active
+  border-color: #ccc
+  .panel-header
+    background-color: #f1f1f1
+  .panel-body
+    background-color: #fff
+  .panel-footer
+    display: block
+
+.available-slot
+  position: relative
+  background-color: #fff
+  height: 50px
+  border: 1px dashed #e1e1e1
+  border-radius: 5px
+  margin-bottom: 6px
+  display: flex
+  align-items: stretch
+  &:after
+    content: 'Available Slot'
+    color: #b1b1b1
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    margin-left: 20px
+  &.active
+    border-style: solid
+    border-color: #ccc
+    &:after
+      display: none
+  .add-subject, .subject
+    display: flex
+    align-items: center
+
+.add-subject
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  background-color: #31b0dd
+  width: 12%
+  justify-content: center
+  i
+    font-style: normal
+    color: #fff
+    font-size: 2rem
+    opacity: 1
+
+.subject-added .add-subject
+  background-color: #84c131
+  width: 3%
+  i
+    opacity: 0
+    display: none
+
+.subject
+  padding: 0 10px
+  width: 88%
+
+.subject-name
+  color: #31b0dd
+
+.subject-detail
+  width: 100%
+
+.subject-description span
+  padding: 0 10px
+  float: left
+  font-size: .75rem
+  &:first-child
+    padding-left: 0
+  &:nth-child(2)
+    border-left: 1px solid #aaa
+  &:last-child
+    padding-right: 0
+
+.subject-added .subject
+  width: 97%
+  .subject-name
+    color: #737373
+
+.pre-tooltip
+  position: absolute
+  top: -66px
+  left: -1px
+  right: -1px
+  background-color: #fff
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.12)
+  display: flex
+  align-items: stretch
+  overflow: hidden
+  border-radius: 5px
+  border: 1px solid #ddd
+  display: none
+  opacity: 1
+  transition: opacity .5s ease
+  &:before
+    content: ''
+    height: 3px
+    width: 0
+    border: 7px solid transparent
+    border-bottom-color: #1d1d1d
+    position: absolute
+    top: -16px
+    left: 14px
+  .bar
+    width: 3%
+    background-color: #fc476e
+  .message
+    width: 97%
+    padding: 6px 10px
+    p
+      margin-bottom: .25rem
+    .add-pre
+      color: #31b0dd
+
+.subject-added.has-pre:hover .pre-tooltip
+  display: flex
+  opacity: 1
+
+.has-pre .pre-warning
+  width: 18px
+  height: 18px
+  padding: 0
+  border-radius: 9px
+  text-align: center
+  font-size: 10px
+  background-color: #fc476e
+  color: #fff
+  border: 1px solid #333
+  font-weight: 700
+  position: absolute
+  right: 10px
+  top: 7px
+
+.light-grey-text
+  color: #aaa
+
+.green-text
+  color: #46811b
+  font-weight: 700
+
+.btn-blue
+  background-color: #137bac
+  color: #fff
+  padding: .5rem 1rem
+  border-radius: 5px
+  position: relative
+  .double-outline-inside
+    color: #137bac
+
+.double-outline-inside
+  position: absolute
+  display: block
+  width: 100%
+  height: 100%
+  left: -4px
+  top: -4px
+  box-sizing: border-box
+  width: calc(100% + 8px)
+  height: calc(100% + 8px)
+  z-index: 1
+  border-width: 1px
+  border-style: solid
+  border-radius: 5px
+
+.progress_bar
+  width: 200px
+  background-color: #fff
+  border: 1px solid #ddd
+  height: 18px
+  border-radius: 8px
+  margin-right: 10px
+  display: flex
+  overflow: hidden
+
+.progress_bar_value
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  color: #fff
+  text-align: center
+  -moz-animation: progress_bar_value .75s ease-out
+  -webkit-animation: progress_bar_value .75s ease-out
+
+@-moz-keyframes progress_bar_value
+  0%
+    width: 0px
+
+  100%
+    width: 50%
+
+
+@-webkit-keyframes progress_bar_value
+  0%
+    width: 0px
+
+  100%
+    width: 50%
+
+
+@media (min-width: 1440px)
+  .container
+    max-width: 1340px
+
+@media (max-width: 768px)
+  .flex-nav .nav-item
+    margin: 5px 0
+  .filter-bar-nav .nav-item
+    border: none
+    padding: 0
